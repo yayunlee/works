@@ -1,0 +1,32 @@
+body {
+  font-family: "Helvetica Neue", "Microsoft Yahei", Helvetica, Roboto,
+               "WenQuanYi Micro Hei", Arial, sans-serif;
+  font-size: 1.275em;
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 45px;
+  font-weight: 300;
+  text-align: center;
+}
+
+#about {
+  background-color: #000;
+  color: #eee;
+  font-weight: 200;
+  padding: 200px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #2199e8;
+}
+
+a:hover {
+  color: #1585cf;
+}
