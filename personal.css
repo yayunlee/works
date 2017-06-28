@@ -30,9 +30,21 @@ h1.title {
   color: #eee;
 }
 
-ul.develop {
+div.develop {
   color: #eee;
   background-color: rgba(63, 63, 63, 0.6);
+  font-weight: 200;
+  font-size: 18px;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding-top: 10px;
+  padding-bottom: 1px;
+  padding-left: 10px;
+}
+
+li.familiar {
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 footer {
