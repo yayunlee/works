@@ -22,10 +22,17 @@ h1 {
 #skill {
   background: url(images/a.jpg) no-repeat bottom center scroll;
   background-size: cover;
+  padding-top: 160px;
+  padding-bottom: 160px;
 }
 
 h1.title {
   color: #eee;
+}
+
+ul.develop {
+  color: #eee;
+  background-color: rgba(63, 63, 63, 0.6);
 }
 
 footer {
