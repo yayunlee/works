@@ -49,6 +49,13 @@ li.familiar {
   margin-bottom: 16px;
 }
 
+#work {
+  background: url(images/e.jpg) no-repeat bottom center scroll;
+  background-size: cover;
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+
 footer {
   background-color: #353535;
   color: #fff;
