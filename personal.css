@@ -28,6 +28,8 @@ h1 {
 
 h1.title {
   color: #eee;
+  margin-top: 0px;
+  margin-bottom: 32px;
 }
 
 div.develop {
