@@ -70,6 +70,38 @@ nav ul {
   display: inline-block;
 }
 
+header {
+  background: url(images/c.jpg) no-repeat bottom center scroll;
+  background-size: cover;
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+
+#lee {
+  color: #fff;
+}
+
+#lee h1 {
+  font-size: 50px;
+}
+
+#quiet {
+  text-align: center;
+}
+
+#quiet p {
+  color: #fff;
+}
+
+#down {
+  text-align: center;
+}
+
+img {
+  max-width: 70px;
+  max-height: 70px;
+}
+
 #about {
   background-color: #000;
   color: #eee;
