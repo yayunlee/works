@@ -206,6 +206,79 @@ time.word {
   font-weight: 300;
 }
 
+
+#contact {
+  background-color: #000;
+  color: #eee;
+  text-align: center;
+  line-height: 1.6;
+  font-weight: 200;
+  text-rendering: optimizeLegibility;
+  padding-top: 160px;
+  padding-bottom: 32px;
+}
+
+.me {
+  margin-top: 0px;
+  margin-bottom: 32px;
+}
+
+.mail_to {
+  margin-top: 48px;
+  margin-bottom: 32px;
+}
+
+.contact-ul {
+  margin-top: 40px;
+}
+
+.contact-ul li {
+  display: inline-block;
+}
+
+.contact-ul li a {
+  border: 1px solid #219AB3;
+  border-radius: 0.5rem;
+  color: #219AB3;
+  padding: 0.5rem 2rem;
+  margin: 0.5rem 1rem;
+  transition: all .3s ease-in-out;
+  font-size: 17px;
+}
+
+.contact-ul li a:hover {
+  background-color: #219AB3;
+  color: #000;
+}
+
+.contact-ul li a i {
+  margin-right: 0.5rem;
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+}
+
+.fa-github:before {
+  content: "";
+}
+
+.fa-heart:before {
+  content: "";
+}
+
+.douban {
+  font-style: normal;
+  font-size: 95%;
+}
+
+.modified-at {
+  padding-top: 8rem;
+  color: #aaa;
+  font-size: 1rem;
+}
+
 footer {
   background-color: #353535;
   color: #fff;
