@@ -319,3 +319,13 @@ footer {
     padding-left: 0px;
   }
 }
+
+@media print, screen and (max-width: 396px) {
+  .top-bar-right ul a {
+    padding: 5px 8.5px;
+  }
+  .top-bar-left ul a {
+    padding: 5px;
+    font-size: 18px;
+  }
+}
