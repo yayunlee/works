@@ -277,3 +277,45 @@ footer {
   padding: 24px;
   font-size: 1.125rem;
 }
+
+@media print, screen and (max-width: 960px) {
+  .row {
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media print, screen and (max-width: 860px) {
+  #contact {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media print, screen and (max-width: 650px) {
+  .contact-ul {
+    padding-left: 0px;
+  }
+
+  .contact-ul li {
+    display: block;
+    margin-bottom: 25px;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  #lee h1 {
+    font-size: 35px;
+  }
+
+  .top-bar-right ul {
+    padding-left: 0px;
+  }
+
+  .top-bar-left ul {
+    padding-left: 0px;
+  }
+}
