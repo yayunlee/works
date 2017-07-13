@@ -7,6 +7,15 @@
           name="viewport">
     <link type="text/css" rel="stylesheet" href="css/font-awesome.css">
     <link type="text/css" rel="stylesheet" href="css/personal.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#slide").click(function(){
+          $("html,body").animate({scrollTop:$("#about").offset().top},700);
+          return false;
+        });
+      });
+    </script>
   </head>
   <body>
     <nav>
@@ -32,7 +41,7 @@
         <p>心静自然凉</p>
       </div>
       <div id="down">
-        <a class="circle" href="#about"><i class="fa fa-angle-double-down"></i></a>
+        <a id="slide" class="circle" href="#about"><i class="fa fa-angle-double-down"></i></a>
       </div>
     </header>
     <div id="about">
