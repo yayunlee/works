@@ -51,10 +51,8 @@ h1 {
 }
 
 nav {
-  background-color: #000;
   padding-top: 22px;
   padding-bottom: 22px;
-  border-bottom: 1px solid #666;
   position: fixed;
   width: 100%;
 }

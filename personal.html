@@ -10,7 +10,7 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
     <script>
       $(document).ready(function(){
-        
+
         $("#slide,#slide1").click(function(){
           $("html,body").animate({scrollTop:$("#about").offset().top},700);
           return false;
@@ -33,6 +33,30 @@
 
       });
     </script>
+    <script>
+      $(document).ready(function(){
+        $(document).scroll(function(){
+          if ($(document).scrollTop()==0)
+            $("nav").css({
+              "background-color": "transparent",
+              "border-bottom-width": "none",
+              "border-bottom-style": "none",
+              "border-bottom-color": "none"
+          });
+          else
+          $("nav").css({
+            "background-color": "#000",
+            "padding-top": "22px",
+            "padding-bottom": "22px",
+            "position": "fixed",
+            "width": "100%",
+            "border-bottom-width": "1px",
+            "border-bottom-style": "solid",
+            "border-bottom-color": "#666"
+          });
+        });
+      });
+    </script>    
   </head>
   <body>
     <nav>
