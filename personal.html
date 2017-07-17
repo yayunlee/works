@@ -57,6 +57,67 @@
         });
       });
     </script>
+    <script>
+      $(document).ready(function(){
+        $(window).scroll(function(){
+
+          if ($(document).scrollTop()<500)
+          {
+            $("#slide1").css({
+              "background-color": "transparent"
+            });
+          }
+
+          else if ($(document).scrollTop()>=500&&$(document).scrollTop()<1563)
+          {
+            $("#slide1").css({
+              "background-color": "#4c4c4c"
+            });
+
+            $("#slide2").css({
+              "background-color": "transparent"
+            });
+          }
+
+          else if ($(document).scrollTop()>=1563&&$(document).scrollTop()<2485)
+          {
+            $("#slide3").css({
+                "background-color": "transparent"
+            });
+            $("#slide2").css({
+                "background-color": "#4c4c4c"
+            });
+            $("#slide1").css({
+                "background-color": "transparent"
+            });
+          }
+
+          else if ($(document).scrollTop()>=2485&&$(document).scrollTop()<3918)
+          {
+            $("#slide4").css({
+              "background-color": "transparent"
+            });
+            $("#slide3").css({
+              "background-color": "#4c4c4c"
+            });
+            $("#slide2").css({
+              "background-color": "transparent"
+            });
+          }
+
+          else if ($(document).scrollTop()>=3918)
+          {
+            $("#slide4").css({
+              "background-color": "#4c4c4c"
+            });
+            $("#slide3").css({
+              "background-color": "transparent"
+            });
+          }
+
+        });
+      });
+    </script>
   </head>
   <body>
     <nav>
