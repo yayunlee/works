@@ -61,14 +61,14 @@
       $(document).ready(function(){
         $(window).scroll(function(){
 
-          if ($(document).scrollTop()<600)
+          if ($(document).scrollTop()<$("header").innerHeight())
           {
             $("#slide1").css({
               "background-color": "transparent"
             });
           }
 
-          else if ($(document).scrollTop()>=600&&$(document).scrollTop()<1663)
+          else if ($(document).scrollTop()>=$("header").innerHeight()&&$(document).scrollTop()<$("header").innerHeight()+$("#about").innerHeight())
           {
             $("#slide1").css({
               "background-color": "#4c4c4c"
@@ -79,7 +79,7 @@
             });
           }
 
-          else if ($(document).scrollTop()>=1663&&$(document).scrollTop()<2585)
+          else if ($(document).scrollTop()>=$("header").innerHeight()+$("#about").innerHeight()&&$(document).scrollTop()<$("header").innerHeight()+$("#about").innerHeight()+$("#skill").innerHeight())
           {
             $("#slide3").css({
                 "background-color": "transparent"
@@ -92,7 +92,7 @@
             });
           }
 
-          else if ($(document).scrollTop()>=2585&&$(document).scrollTop()<4018)
+          else if ($(document).scrollTop()>=$("header").innerHeight()+$("#about").innerHeight()+$("#skill").innerHeight()&&$(document).scrollTop()<$("header").innerHeight()+$("#about").innerHeight()+$("#skill").innerHeight()+$("#work").innerHeight())
           {
             $("#slide4").css({
               "background-color": "transparent"
@@ -105,7 +105,7 @@
             });
           }
 
-          else if ($(document).scrollTop()>=4018)
+          else if ($(document).scrollTop()>=$("header").innerHeight()+$("#about").innerHeight()+$("#skill").innerHeight()+$("#work").innerHeight())
           {
             $("#slide4").css({
               "background-color": "#4c4c4c"
