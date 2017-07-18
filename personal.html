@@ -37,38 +37,48 @@
       $(document).ready(function(){
         $(document).scroll(function(){
           if ($(document).scrollTop()==0)
+          {
             $("nav").css({
               "background-color": "transparent",
               "border-bottom-width": "none",
               "border-bottom-style": "none",
               "border-bottom-color": "none"
-          });
+            });
+          }
           else
-          $("nav").css({
-            "background-color": "#000",
-            "padding-top": "22px",
-            "padding-bottom": "22px",
-            "position": "fixed",
-            "width": "100%",
-            "border-bottom-width": "1px",
-            "border-bottom-style": "solid",
-            "border-bottom-color": "#666"
-          });
+          {
+            $("nav").css({
+              "background-color": "#000",
+              "padding-top": "22px",
+              "padding-bottom": "22px",
+              "position": "fixed",
+              "width": "100%",
+              "border-bottom-width": "1px",
+              "border-bottom-style": "solid",
+              "border-bottom-color": "#666"
+            });
+          }
         });
       });
     </script>
     <script>
       $(document).ready(function(){
         $(window).scroll(function(){
+          var d = $(document).scrollTop();
+          var h = $("header").innerHeight();
+          var a = $("#about").innerHeight();
+          var s = $("#skill").innerHeight();
+          var w = $("#work").innerHeight();
+          var n = $("nav").innerHeight();
 
-          if ($(document).scrollTop()<$("header").innerHeight()-$("nav").innerHeight())
+          if (d < h-n)
           {
             $("#slide1").css({
               "background-color": "transparent"
             });
           }
 
-          else if ($(document).scrollTop()>=$("header").innerHeight()-$("nav").innerHeight()&&$(document).scrollTop()<$("header").innerHeight()+$("#about").innerHeight()-$("nav").innerHeight())
+          else if (d >= h-n && d < h+a-n)
           {
             $("#slide1").css({
               "background-color": "#4c4c4c"
@@ -79,7 +89,7 @@
             });
           }
 
-          else if ($(document).scrollTop()>=$("header").innerHeight()+$("#about").innerHeight()-$("nav").innerHeight()&&$(document).scrollTop()<$("header").innerHeight()+$("#about").innerHeight()+$("#skill").innerHeight()-$("nav").innerHeight())
+          else if (d >= h+a-n && d < h+a+s-n)
           {
             $("#slide3").css({
                 "background-color": "transparent"
@@ -92,8 +102,7 @@
             });
           }
 
-          else if ($(document).scrollTop()>=$("header").innerHeight()+$("#about").innerHeight()+$("#skill").innerHeight()-$("nav").innerHeight()
-          &&$(document).scrollTop()<$("header").innerHeight()+$("#about").innerHeight()+$("#skill").innerHeight()+$("#work").innerHeight()-$("nav").innerHeight())
+          else if (d >= h+a+s-n && d < h+a+s+w-n)
           {
             $("#slide4").css({
               "background-color": "transparent"
@@ -106,7 +115,7 @@
             });
           }
 
-          else if ($(document).scrollTop()>=$("header").innerHeight()+$("#about").innerHeight()+$("#skill").innerHeight()+$("#work").innerHeight()-$("nav").innerHeight())
+          else if (d >= h+a+s+w-n)
           {
             $("#slide4").css({
               "background-color": "#4c4c4c"
