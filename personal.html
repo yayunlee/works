@@ -61,14 +61,14 @@
       $(document).ready(function(){
         $(window).scroll(function(){
 
-          if ($(document).scrollTop()<$("header").innerHeight())
+          if ($(document).scrollTop()<$("header").innerHeight()-$("nav").innerHeight())
           {
             $("#slide1").css({
               "background-color": "transparent"
             });
           }
 
-          else if ($(document).scrollTop()>=$("header").innerHeight()&&$(document).scrollTop()<$("header").innerHeight()+$("#about").innerHeight())
+          else if ($(document).scrollTop()>=$("header").innerHeight()-$("nav").innerHeight()&&$(document).scrollTop()<$("header").innerHeight()+$("#about").innerHeight()-$("nav").innerHeight())
           {
             $("#slide1").css({
               "background-color": "#4c4c4c"
@@ -79,7 +79,7 @@
             });
           }
 
-          else if ($(document).scrollTop()>=$("header").innerHeight()+$("#about").innerHeight()&&$(document).scrollTop()<$("header").innerHeight()+$("#about").innerHeight()+$("#skill").innerHeight())
+          else if ($(document).scrollTop()>=$("header").innerHeight()+$("#about").innerHeight()-$("nav").innerHeight()&&$(document).scrollTop()<$("header").innerHeight()+$("#about").innerHeight()+$("#skill").innerHeight()-$("nav").innerHeight())
           {
             $("#slide3").css({
                 "background-color": "transparent"
@@ -92,7 +92,8 @@
             });
           }
 
-          else if ($(document).scrollTop()>=$("header").innerHeight()+$("#about").innerHeight()+$("#skill").innerHeight()&&$(document).scrollTop()<$("header").innerHeight()+$("#about").innerHeight()+$("#skill").innerHeight()+$("#work").innerHeight())
+          else if ($(document).scrollTop()>=$("header").innerHeight()+$("#about").innerHeight()+$("#skill").innerHeight()-$("nav").innerHeight()
+          &&$(document).scrollTop()<$("header").innerHeight()+$("#about").innerHeight()+$("#skill").innerHeight()+$("#work").innerHeight()-$("nav").innerHeight())
           {
             $("#slide4").css({
               "background-color": "transparent"
@@ -105,7 +106,7 @@
             });
           }
 
-          else if ($(document).scrollTop()>=$("header").innerHeight()+$("#about").innerHeight()+$("#skill").innerHeight()+$("#work").innerHeight())
+          else if ($(document).scrollTop()>=$("header").innerHeight()+$("#about").innerHeight()+$("#skill").innerHeight()+$("#work").innerHeight()-$("nav").innerHeight())
           {
             $("#slide4").css({
               "background-color": "#4c4c4c"
