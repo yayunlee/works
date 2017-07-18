@@ -109,6 +109,10 @@ header {
   border-radius: 50%;
 }
 
+#down .circle:hover {
+  opacity: 0.7;
+}
+
 #about {
   background-color: #000;
   color: #eee;
@@ -122,7 +126,7 @@ header {
 }
 
 #skill {
-  background: url(../images/a.jpg) no-repeat bottom center scroll;
+  background: url(../images/a.jpg) no-repeat center scroll;
   background-size: cover;
   padding-top: 160px;
   padding-bottom: 160px;
